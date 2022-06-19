@@ -1,0 +1,54 @@
+body{ 
+    background-color: gray;
+    margin:0px;
+    padding: 0px;
+}
+
+.btn{
+width: 200px;
+height: 60px;
+background-color:#ffc107;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+.btn:before{
+    color: white;
+    font-family: sans-serif;
+    content: 'Hover Me!';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 21px;
+    transition: all 0.5s ;
+
+
+}
+
+.btn:hover::before{
+    top: -30%;
+
+}
+
+.btn:after{
+    font-family: 'ionicons';
+    content: '\f141'; 
+    color: red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:40px;
+    top:140%;
+    transition: all 0.5s ;
+}
+
+.btn:hover::after{
+    top: 50%;
+}
